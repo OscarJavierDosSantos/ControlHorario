@@ -3,17 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hora de Entrada y Salida</title>
+    <title>Calculadora de Hora de Salida</title>
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Calculadora de Hora de Salida</h1>
-        <label for="entryTime">Hora de Entrada:</label>
-        <input type="time" id="entryTime" required>
-        <button id="calculateButton">Calcular Hora de Salida</button>
-        <h2 id="result"></h2>
+<div class="container">
+    <h1>Calculadora de Hora de Salida</h1>
+    
+    <label>Hora de entrada:</label>
+    <div class="input-group">
+        <input type="number" id="horaEntrada" placeholder="Ej. 9">
+        <span>:</span>
+        <input type="number" id="minutosEntrada" placeholder="Ej. 30">
     </div>
+    
+    <label>Hora de salida:</label>
+     <div class="input-group">
+        <input type="number" id="horaSalida" placeholder="Ej. 9">
+        <span>:</span>
+        <input type="number" id="minutosSalida" placeholder="Ej. 30">
+    </div>
+
+    <label for="tiempoComida">Tiempo de comida usado (min):</label>
+    <input type="number" id="tiempoComida" placeholder="Ej. 60">
+
+    <button onclick="calcularSalida()">Calcular salida</button>
+    <h2 id="resultado"></h2>
+</div>
+
     <script src="main.js"></script>
 </body>
 </html>
